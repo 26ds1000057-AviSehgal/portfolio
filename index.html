@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avi Sehgal — mathematics &amp; data science</title>
+<meta name="description" content="Portfolio of Avi Sehgal: mathematics undergraduate working on clustering ensembles, data science, and applied machine learning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,500;1,6..72,300&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#161a24;
+    --slate:#5a6478;
+    --paper:#f7f5f0;
+    --rule:#d6d2c8;
+    --mark:#2f5d50;
+    --measure:62ch;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Newsreader",Georgia,serif;
+    font-size:clamp(17px,1.05vw + 14px,19px);
+    line-height:1.65;
+    font-weight:300;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:72ch;margin:0 auto;padding:clamp(2.5rem,7vw,6rem) 1.5rem 5rem}
+  a{color:var(--mark);text-decoration-thickness:1px;text-underline-offset:3px}
+  a:focus-visible{outline:2px solid var(--mark);outline-offset:3px;border-radius:2px}
+
+  header{display:grid;gap:1.25rem;padding-bottom:2.5rem;border-bottom:1px solid var(--rule)}
+  h1{
+    font-size:clamp(2.6rem,7vw,4.2rem);
+    line-height:1.02;
+    font-weight:500;
+    letter-spacing:-0.02em;
+    margin:0;
+  }
+  .standfirst{
+    margin:0;
+    max-width:var(--measure);
+    font-size:1.15em;
+    color:var(--slate);
+    font-style:italic;
+  }
+
+  section{padding-top:2.75rem}
+  h2{
+    font-family:"IBM Plex Sans",system-ui,sans-serif;
+    font-size:.82rem;
+    font-weight:500;
+    letter-spacing:.04em;
+    color:var(--slate);
+    margin:0 0 1rem;
+  }
+  p{max-width:var(--measure);margin:0 0 1rem}
+
+  .entries{display:grid;gap:2rem;margin:0;padding:0;list-style:none}
+  .entries h3{
+    margin:0 0 .35rem;
+    font-size:1.25rem;
+    font-weight:500;
+    line-height:1.25;
+  }
+  .entries p{margin:0;color:var(--slate)}
+  .where{
+    display:block;
+    font-family:"IBM Plex Sans",system-ui,sans-serif;
+    font-size:.78rem;
+    color:var(--slate);
+    margin-bottom:.5rem;
+  }
+
+  .contact{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--rule)}
+  .email{
+    font-size:1.2em;
+    word-break:break-all;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Avi Sehgal</h1>
+    <p class="standfirst">Mathematics undergraduate working on clustering ensembles, and the data science that grows out of them.</p>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>I am in the fourth year of a BSc (Hons) Mathematics at Sri Venkateswara College, University of Delhi, and alongside it I am taking the IIT Madras Diploma in Data Science. My dissertation looks at whether boosting, which works so well for classifiers, can be made to work for clustering.</p>
+    <p>I also tutor students online, and I run a jet ski and boat rental business on the Gulf coast of Florida — which has taught me more about scheduling, pricing, and demand curves than any textbook.</p>
+  </section>
+
+  <section>
+    <h2>Work</h2>
+    <ul class="entries">
+      <li>
+        <h3>Boosting for clustering</h3>
+        <span class="where">Undergraduate dissertation, University of Delhi</span>
+        <p>Adapting ensemble and boosting methods, built for supervised learning, to the unsupervised case. The hard part is that without labels there is no error to boost against, so the weighting has to come from somewhere else.</p>
+      </li>
+      <li>
+        <h3>Adaptive feature-weighted clustering</h3>
+        <span class="where">Research framework</span>
+        <p>A clustering framework that learns how much each feature should count, rather than treating every dimension as equally informative. Presented to an audience of economists, which forced the explanation to get much clearer.</p>
+      </li>
+      <li>
+        <h3>Heavy equipment price prediction</h3>
+        <span class="where">Kaggle competition, IIT Madras</span>
+        <p>A regression pipeline for predicting auction prices of used heavy machinery, with most of the work going into feature engineering on messy, partly missing equipment specifications.</p>
+      </li>
+      <li>
+        <h3>Adventures Jet Ski Rentals</h3>
+        <span class="where">Fort Myers &amp; Cape Coral, Florida</span>
+        <p>A rental business I own and run, including its website and booking flow.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p class="email"><!--email_off-->26ds1000057@ds.study.iitm.ac.in<!--/email_off--></p>
+  </section>
+
+</div>
+</body>
+</html>
